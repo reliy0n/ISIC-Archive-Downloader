@@ -43,13 +43,13 @@ def download_archive(num_images_requested, offset, skip_images, segmentation, fi
                                                                           num_images_requested))
 
     # By this point we've got the description of only the required images
-    if not skip_images:
-        create_if_none(images_dir)
-        download_images(descriptions=descriptions, images_dir=images_dir, num_processes=num_processes)
+    #if not skip_images:
+        #reate_if_none(images_dir)
+        #download_images(descriptions=descriptions, images_dir=images_dir, num_processes=num_processes)
 
-    if segmentation:
-        create_if_none(seg_dir)
-        download_segmentations(descriptions=descriptions, seg_dir=seg_dir, seg_skill=seg_skill, num_processes=num_processes)
+    #if segmentation:
+        #create_if_none(seg_dir)
+        #download_segmentations(descriptions=descriptions, seg_dir=seg_dir, seg_skill=seg_skill, num_processes=num_processes)
 
     print('Finished downloading')
 
